@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const env = require('dotenv').config().parsed;
 
+// Helpers
+const discordHelper = require('./helpers/discord-helper.js');
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -16,6 +19,12 @@ client.on('message', (message) => {
         case '!ping':
             message.reply('Pong!')
             break
+        case '!weeb':
+            message.reply('Elian is a weeb')
+            break
+        case '!duck':
+            discordHelper.sendEmbed(message)
+            break;
         default:
             console.log(message.content)
             break
