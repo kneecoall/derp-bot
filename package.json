@@ -1,0 +1,8 @@
+{
+  "name": "derp-bot",
+  "author": "kneecoall",
+  "dependencies": {
+    "discord.js": "^12.4.1",
+    "dotenv": "^8.2.0"
+  }
+}
