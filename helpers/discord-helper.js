@@ -2,7 +2,6 @@ const Discord = require('discord.js');
 
 module.exports = {
     sendEmbed: function(message) {
-        // inside a command, event listener, etc.
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#344a21')
             .setTitle('duck')
@@ -19,6 +18,6 @@ module.exports = {
             .setTimestamp()
             .setFooter('duck', 'https://i.imgur.com/iRjvEAE.jpeg');
 
-        message.reply(exampleEmbed)
+        message.reply(exampleEmbed);
     }
 }
