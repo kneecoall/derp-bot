@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 
-module.exports = {
-    sendEmbed: function(message) {
+module.exports.sendEmbed = (message) => {
         // inside a command, event listener, etc.
         const exampleEmbed = new Discord.MessageEmbed()
             .setColor('#344a21')
@@ -21,4 +20,3 @@ module.exports = {
 
         message.reply(exampleEmbed)
     }
-}
